@@ -9,12 +9,6 @@ from sklearn.neural_network import MLPClassifier
 import warnings
 warnings.filterwarnings(action='ignore')
 
-# data
-data = pd.read_csv('red_emb.csv')
-sample_data = data.sample(100, random_state=39)
-og_data = pd.read_csv('twitter_dataset_v2.csv', lineterminator='\n')
-og_sample_data = og_data.loc[sample_data.index]
-
 class LabelCorrector():
     def __init__(self):
         self.pred_threshold = 0.8
@@ -39,7 +33,7 @@ class LabelCorrector():
         for i in range(self.pred_iteration):
             dataset = dataset.sample(frac=1)
             train, test = train_test_split(
-                sample_data, test_size=self.split_ratio)
+                dataset, test_size=self.split_ratio)
             for model in self.classification_models.keys():
                 self.classification_models[model].fit(train.drop(
                     label_names, axis=1), train[label_names[0]])
