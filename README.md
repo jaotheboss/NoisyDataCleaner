@@ -11,7 +11,7 @@ These models leverage on monte carlo simulation to approximate the correctness o
 
 ## Install:
 ```bash
-pip install noisydatacleaner==1.0
+pip install noisydatacleaner
 ```
 
 ## Models: 
