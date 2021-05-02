@@ -5,8 +5,8 @@ These models leverage on monte carlo simulation to approximate the correctness o
 
 <p align="center">
   <a href="LICENSE"><img src="https://img.shields.io/badge/License-MIT-brightgreen?style=plastic&logo=appveyor"/></a>
-  <a href="https://pypi.org/project/noisydatacleaner/1.0/"><img src="https://img.shields.io/pypi/v/noisydatacleaner?style=plastic"/></a>
-  <a href="https://pypi.org/project/noisydatacleaner/1.0/"><img src="https://img.shields.io/pypi/pyversions/noisydatacleaner?style=plastic"/></a>
+  <a href="https://pypi.org/project/noisydatacleaner/"><img src="https://img.shields.io/pypi/v/noisydatacleaner?style=plastic"/></a>
+  <a href="https://pypi.org/project/noisydatacleaner/"><img src="https://img.shields.io/pypi/pyversions/noisydatacleaner?style=plastic"/></a>
 </p>
 
 ## Install:
