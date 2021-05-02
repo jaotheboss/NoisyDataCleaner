@@ -3,6 +3,17 @@ Python classes that identify and correct/remove noise in datasets
 
 These models leverage on monte carlo simulation to approximate the correctness of a given label. The correction of the label builds on from the noise detection model. 
 
+<p align="center">
+  <a href="LICENSE"><img src="https://img.shields.io/badge/License-MIT-brightgreen?style=plastic&logo=appveyor"/></a>
+  <a href="https://pypi.org/project/noisydatacleaner/1.0/"><img src="https://img.shields.io/pypi/v/noisydatacleaner?style=plastic"/></a>
+  <a href="https://pypi.org/project/noisydatacleaner/1.0/"><img src="https://img.shields.io/pypi/pyversions/noisydatacleaner?style=plastic"/></a>
+</p>
+
+## Install:
+```bash
+pip install noisydatacleaner==1.0
+```
+
 ## Models: 
 
 1. NoiseRemover
