@@ -6,7 +6,7 @@ with open("README.md", mode="r", encoding="utf-8") as readme_file:
 
 
 setup(
-    name="noisy-data-cleaner_jaotheboss",
+    name="noisydatacleaner",
     version="1.0",
     author="Teo Jao Ming",
     author_email="jaomingteo@gmail.com",
