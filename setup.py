@@ -7,7 +7,7 @@ with open("README.md", mode="r", encoding="utf-8") as readme_file:
 
 setup(
     name="noisydatacleaner",
-    version="1.0.1",
+    version="1.0.3",
     author="Teo Jao Ming",
     author_email="jaomingteo@gmail.com",
     description="Noise Detection and Label Correcting Package",
