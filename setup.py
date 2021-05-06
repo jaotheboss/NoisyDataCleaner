@@ -7,7 +7,7 @@ with open("README.md", mode="r", encoding="utf-8") as readme_file:
 
 setup(
     name="noisydatacleaner",
-    version="1.0.4",
+    version="1.0.5",
     author="Teo Jao Ming",
     author_email="jaomingteo@gmail.com",
     description="Noise Detection and Label Correcting Package",
@@ -25,4 +25,9 @@ setup(
     package_dir={"": "src"},
     packages=find_packages(where="src"),
     python_requires=">=3.8",
+    install_requires=[
+        'scikit-learn',
+        'numpy',
+        'pandas'
+    ]
 )
