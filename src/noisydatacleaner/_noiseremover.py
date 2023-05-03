@@ -34,13 +34,15 @@ class NoiseRemover:
     # --- Main Function --- #
     def remove_noise(self: None,
                         X: pd.DataFrame,
-                        y: pd.Series) -> pd.DataFrame:
+                        y: pd.Series,
+                        key_label = None) -> pd.DataFrame:
         unique_labels = y.unique()
         n_labels = len(unique_labels)
         data = X.copy()
         data['label'] = y
         if n_labels == 2:
-            key_label = unique_labels[0]
+            if key_label is None:
+                key_label = unique_labels[0]
             new_y = y.apply(lambda x: 1 if x == key_label else 0)
             noisy_indexes = self.detect_noise(
                 data.drop('label', axis=1), new_y)
